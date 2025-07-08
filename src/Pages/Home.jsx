@@ -4,30 +4,7 @@ import gsap from 'gsap'
 import {useGSAP} from '@gsap/react'
 
 export const Home = () => {
-    const videoRef = useRef();
-    const isMobile = useMediaQuery({maxWidth: 767});
-
-    useGSAP(()=>{
-        const startValue = isMobile? 'top 50%' : 'center 60%';
-        const endValue = isMobile? '120% top' : 'bottom top';
-
-        const tl = gsap.timeline({
-            scrollTrigger:{
-                trigger: 'video',
-                start: startValue,
-                end: endValue,
-                scrub: true,
-                pin: true,
-            }
-        })
-
-        videoRef.current.onloadedmetadata = () =>{
-            tl.to(videoRef.current, {
-                currentTime: videoRef.current.duration
-            })
-        }
-    }, []);
-
+   
   return (
     <>
         <section id="home">
@@ -53,17 +30,6 @@ export const Home = () => {
                 </div>
             </div>
         </section>
-
-        <div className='video'>
-            <video 
-                src="/videos/output.mp4" 
-                ref={videoRef}
-                muted
-                playsInline
-                preload='auto'
-                
-            />
-        </div>
     </>
   )
 }

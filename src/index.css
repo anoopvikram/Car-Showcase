@@ -73,7 +73,7 @@ h1, p {
             
 
             h2{
-                @apply opacity-10  absolute rotate-[-90deg] origin-left font-Anton text-yellow-300 text-[290px] leading-none font-black -bottom-25 left-35 w-fit mx-0;
+                @apply opacity-15  absolute rotate-[-90deg] origin-left font-Anton text-yellow-300 text-[290px] leading-none font-black -bottom-25 left-35 w-fit mx-0;
             }
             div{
                 @apply absolute rotate-[-90deg]  origin-left font-Antonio flex flex-row justify-evenly items-center text-3xl bg-black bottom-0 left-11 w-[800px] py-2 border-2 rounded-4xl; 
@@ -83,11 +83,15 @@ h1, p {
     }
 
     video{
-        @apply z-0 w-full md:h-[100%] h-1/2 absolute bottom-0 left-0  object-bottom object-cover;
+        @apply fixed top-0 left-0 w-full h-full object-cover;
     }
 
     #about{
-        @apply relative min-h-dvh w-full overflow-hidden;
+        @apply relative min-h-dvh w-full overflow-hidden py-10;
+
+        .cover{
+            @apply object-cover min-h-dvh w-full bg-black rounded-3xl opacity-58;
+        }
 
         .main{
             @apply absolute top-1/4 flex flex-row ml-10 ;
@@ -121,16 +125,24 @@ h1, p {
             }
 
              .desc-two{
-                @apply inline-block bg-[#00000066] text-gray-400 text-3xl font-Antonio py-2 pr-2 rounded-lg;
+                @apply inline-block bg-[#00000066] text-gray-400 text-3xl font-Antonio py-2 px-2 rounded-lg;
             }
         }
 
         .design{
-            @apply absolute right-0 z-0;
+            @apply absolute right-0 z-0 top-0;
 
             h2{
-                @apply font-Anton text-[190px] leading-none text-yellow opacity-10;
+                @apply font-Anton text-[190px] leading-none text-yellow opacity-20;
             }
         }
+    }
+
+    #spec{
+        @apply opacity-15 relative min-h-dvh w-full overflow-hidden bg-amber-400;
+    }
+
+    #contact{
+        @apply opacity-15 relative min-h-dvh w-full overflow-hidden  bg-amber-700;
     }
 }
