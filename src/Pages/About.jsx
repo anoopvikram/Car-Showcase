@@ -3,7 +3,6 @@
 export const About = () => {
   return (
     <section id="about">
-        <div className="cover"></div>
         <div className="main">
             <h2>P1800</h2>
             <div className="sub">
