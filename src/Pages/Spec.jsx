@@ -3,7 +3,7 @@
 export const Spec = () => {
   return (
     <section id="spec">
-      <div className="cover"></div>
+      <div className="cover"><p>SPECIFICS</p></div>
       <div className="spec-container">
 
         <div className="power spec-item">
@@ -30,10 +30,11 @@ export const Spec = () => {
           </div>
         </div>
 
-        <div className="desc">
-        <p>The Volvo P1800 Restomod PL runs a 2.0L turbocharged inline-4, producing 320 HP and hitting 0-100 km/h in 4.8 seconds. A 6-speed manual transmission, adjustable suspension, and ventilated disc brakes deliver sharp, confident performance. Inside, hand-stitched leather, a digital cluster, and custom details combine vintage charm with modern tech.</p>
+
       </div>
 
+      <div className="desc">
+        <p>The Volvo P1800 Restomod PL runs a 2.0L turbocharged inline-4, producing 320 HP and hitting 0-100 km/h in 4.8 seconds. A 6-speed manual transmission, adjustable suspension, and ventilated disc brakes deliver sharp, confident performance. Inside, hand-stitched leather, a digital cluster, and custom details combine vintage charm with modern tech.</p>
       </div>
 
       <div className="main">
@@ -42,6 +43,17 @@ export const Spec = () => {
               <p className="sub-one">CLASSIC</p>
               <p className="sub-two">RESTOMOD</p>
           </div>
+      </div>
+
+      <div className="banner">
+        <p>Timeless</p>
+        <p>Powerful</p>
+        <p>Refined</p>
+        <p>Iconic</p>
+        <p>Modernized</p>
+        <p>Elegant</p>
+        <p>Bold</p>
+        <p>Precise</p>
       </div>
 
     </section>
