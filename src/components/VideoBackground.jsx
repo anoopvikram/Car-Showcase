@@ -51,7 +51,8 @@ const VideoBackground = () => {
   return (
     <video
       ref={videoRef}
-      src="/videos/output.mp4"
+      src="/videos/output.webm"
+      preload="auto"
       muted
       playsInline
     />
