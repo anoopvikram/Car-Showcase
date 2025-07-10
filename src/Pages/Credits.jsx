@@ -1,8 +1,24 @@
-import React from 'react'
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
+
 
 export const Credits = () => {
+
+  // useGSAP(()=>{
+  //   gsap.from('.credit',{
+  //     opacity: 0,
+  //     yPercent: 100,
+  //     ease: 'power1.inOut',
+  //     duration: .8,
+  //     scrollTrigger:{
+  //       trigger: '#credits',
+  //       start: 'top 20%'
+  //     }
+  //   })
+  // })
   return (
     <section id="credits">
+      <div className="credit">
         <h2 className='head'>CREDITS</h2>
         <p>Designed and developed by <a href="https://anoop-portfolio-orcin.vercel.app/" target="_blank" rel="noopener noreferrer">Anoop Vikram</a></p>
 
@@ -28,7 +44,7 @@ export const Credits = () => {
         </ul>
 
         <p className="note">Thanks to everyone who supported and inspired this project.</p>
-    
+      </div>
     </section>
   )
 }

@@ -1,9 +1,45 @@
-
+import gsap from 'gsap'
+import {useGSAP} from '@gsap/react'
 
 export const About = () => {
+
+    useGSAP(()=>{
+        gsap.from('.design h2',{
+            xPercent: 100,
+            ease: 'power1.inOut',
+            duration: .8,
+            stagger: .1,
+            scrollTrigger:{
+                trigger: '#about',
+                start: 'top 80%',
+            }
+        })
+
+        gsap.from('.about-main',{
+            xPercent: -100,
+            ease: 'power1.inOut',
+            duration: .8,
+            stagger: .1,
+            scrollTrigger:{
+                trigger: '#about',
+                start: 'top 80%',
+            }
+        })
+
+        gsap.timeline({
+            scrollTrigger:{
+                trigger: '#about',
+                start: 'bottom 90%',
+                end: 'bottom top',
+                scrub: true
+            }
+        })
+        .to('.design h2',{x:200, stagger: .1}, 0)
+
+    })
   return (
     <section id="about">
-        <div className="main">
+        <div className="main about-main">
             <h2>P1800</h2>
             <div className="sub">
                 <p className="sub-one">CLASSIC</p>
