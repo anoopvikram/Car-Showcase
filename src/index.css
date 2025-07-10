@@ -278,4 +278,37 @@ h1, p {
         }
     }
 
+    #credits{
+        @apply w-full relative z-10 min-h-dvh text-center py-5 bg-[#00000090];
+        
+        h2{
+            @apply font-Anton text-4xl mb-2 
+        }
+
+        .head{
+            @apply text-6xl mt-10 text-yellow
+        }
+
+        p, ul{
+            @apply font-Antonio text-2xl mb-2 pb-8
+        }
+
+        .libraries{
+            @apply flex flex-row justify-center gap-2
+        }
+
+        a {
+            @apply text-yellow no-underline transition duration-300;
+
+            &:hover {
+                @apply text-yellow;
+                text-shadow: 0 0 8px #fce89a, 0 0 16px #fce89a;
+            }
+        }
+
+        .note{
+            @apply text-3xl
+        }
+    }
+
 }

@@ -10,7 +10,7 @@ const VideoBackground = () => {
   useEffect(() => {
     const video = videoRef.current;
 
-    // Home section: 0s to 5s
+    // Home section
     ScrollTrigger.create({
       trigger: "#home",
       start: "top top",
@@ -22,7 +22,7 @@ const VideoBackground = () => {
       },
     });
 
-    // About section: 6s to 10s
+    // About section
     ScrollTrigger.create({
       trigger: "#about",
       start: "top top",
@@ -34,7 +34,7 @@ const VideoBackground = () => {
       },
     });
 
-   // About section: 6s to 10s
+   // About section
     ScrollTrigger.create({
       trigger: "#spec",
       start: "top top",
@@ -42,7 +42,19 @@ const VideoBackground = () => {
       scrub: true,
       onUpdate: (self) => {
         const progress = self.progress;
-        video.currentTime = 9 + progress * (14 - 9);
+        video.currentTime = 9 + progress * (12 - 9);
+      },
+    });
+
+    // Contact section
+    ScrollTrigger.create({
+      trigger: "#contact",
+      start: "top top",
+      end: "bottom top",
+      scrub: true,
+      onUpdate: (self) => {
+        const progress = self.progress;
+        video.currentTime = 12 + progress * (15 - 12);
       },
     });
 

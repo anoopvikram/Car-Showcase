@@ -6,6 +6,7 @@ import { About } from './Pages/About';
 import { Spec } from './Pages/Spec';
 import { Contact } from './Pages/Contact';
 import VideoBackground from './components/VideoBackground';
+import { Credits } from './Pages/Credits';
 
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -19,6 +20,7 @@ export const App = () => {
       <About/>
       <Spec/>
       <Contact/>
+      <Credits/>
     </main>
   )
 }
