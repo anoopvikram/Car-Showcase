@@ -27,17 +27,17 @@ h1, p {
     }
 
     nav{
-        @apply w-full mx-auto fixed my-3 z-50;
+        @apply w-49/50 mx-3 fixed my-3 z-50 py-2 rounded-4xl;
     
         div{
             @apply flex flex-col md:flex-row gap-2 justify-between;
 
             p{
-                @apply text-4xl  md:ml-25 my-2 font-bold font-Anton text-center;
+                @apply text-3xl md:text-4xl  md:ml-25 my-2 font-bold font-Anton text-center;
             }
 
             ul{
-                @apply flex flex-row gap-5 md:gap-10 mx-5 my-2 justify-center;
+                @apply flex flex-row gap-3 text-base md:text-lg md:gap-10 mx-5 my-2 font-Antonio justify-center;
 
             }
         }
